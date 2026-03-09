@@ -4,6 +4,6 @@ services:
     container_name: bizkeremet-net
     restart: unless-stopped
     ports:
-      - "8085:80"
+      - "8086:80"
     labels:
       - "com.project=bizkeremet-net"
