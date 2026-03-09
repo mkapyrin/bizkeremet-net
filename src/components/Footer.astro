@@ -1,0 +1,25 @@
+---
+const year = new Date().getFullYear();
+---
+<footer class="bg-bg-dark text-gray-400 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-2 text-white font-bold text-lg">
+        <svg class="w-7 h-7 text-primary" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="8" fill="currentColor"/>
+          <path d="M8 10h6v4H8v-4zm0 8h10v4H8v-4zm10-8h6v12h-6V10z" fill="white"/>
+        </svg>
+        Бизкеремет
+      </div>
+
+      <div class="flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-white transition-colors">Услуги</a>
+        <a href="#portfolio" class="hover:text-white transition-colors">Портфолио</a>
+        <a href="#team" class="hover:text-white transition-colors">Команда</a>
+        <a href="#contacts" class="hover:text-white transition-colors">Контакты</a>
+      </div>
+
+      <p class="text-sm">&copy; {year} Бизкеремет. Все права защищены.</p>
+    </div>
+  </div>
+</footer>

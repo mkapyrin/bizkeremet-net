@@ -1,0 +1,54 @@
+---
+const team = [
+  {
+    name: 'Азамат Исаков',
+    role: 'CEO & Founder',
+    bio: 'Более 10 лет в IT-индустрии. Отвечает за стратегию и развитие компании.',
+    initials: 'АИ',
+    color: 'from-blue-500 to-indigo-600',
+  },
+  {
+    name: 'Айгуль Бекова',
+    role: 'CTO',
+    bio: 'Архитектор решений с экспертизой в облачных технологиях и микросервисах.',
+    initials: 'АБ',
+    color: 'from-emerald-500 to-teal-600',
+  },
+  {
+    name: 'Данияр Касымов',
+    role: 'Lead Developer',
+    bio: 'Full-stack разработчик, специалист по React, Node.js и мобильной разработке.',
+    initials: 'ДК',
+    color: 'from-violet-500 to-purple-600',
+  },
+  {
+    name: 'Нурай Жумабаева',
+    role: 'UI/UX Designer',
+    bio: 'Создаёт интуитивные интерфейсы, которые пользователи любят с первого взгляда.',
+    initials: 'НЖ',
+    color: 'from-pink-500 to-rose-600',
+  },
+];
+---
+<section id="team" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <span class="text-primary font-semibold text-sm tracking-wider uppercase">Кто мы</span>
+      <h2 class="text-3xl sm:text-4xl font-bold mt-3">Наша команда</h2>
+      <p class="text-text-light mt-4 max-w-2xl mx-auto">Профессионалы, объединённые общей целью — создавать качественные цифровые продукты</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      {team.map(member => (
+        <div class="group text-center">
+          <div class={`w-32 h-32 mx-auto rounded-2xl bg-gradient-to-br ${member.color} flex items-center justify-center mb-5 group-hover:scale-105 group-hover:shadow-lg transition-all duration-300`}>
+            <span class="text-3xl font-bold text-white">{member.initials}</span>
+          </div>
+          <h3 class="font-bold text-lg">{member.name}</h3>
+          <p class="text-primary font-medium text-sm mt-1">{member.role}</p>
+          <p class="text-text-light text-sm mt-3 leading-relaxed">{member.bio}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

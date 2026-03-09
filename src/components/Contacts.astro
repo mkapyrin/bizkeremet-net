@@ -1,0 +1,113 @@
+---
+---
+<section id="contacts" class="py-24 bg-bg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <span class="text-primary font-semibold text-sm tracking-wider uppercase">Свяжитесь с нами</span>
+      <h2 class="text-3xl sm:text-4xl font-bold mt-3">Контакты</h2>
+      <p class="text-text-light mt-4 max-w-2xl mx-auto">Готовы обсудить ваш проект? Напишите нам, и мы ответим в течение 24 часов</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+      <!-- Contact Form -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+        <form action="https://formsubmit.co/info@bizkeremet.net" method="POST" class="space-y-6">
+          <input type="hidden" name="_subject" value="Новая заявка с сайта bizkeremet.net" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://bizkeremet.net/#contacts" />
+          <input type="text" name="_honey" style="display:none" />
+
+          <div>
+            <label for="name" class="block text-sm font-medium mb-2">Имя</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+              placeholder="Ваше имя" />
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+              placeholder="email@example.com" />
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium mb-2">Сообщение</label>
+            <textarea id="message" name="message" rows="4" required
+              class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
+              placeholder="Расскажите о вашем проекте..."></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full py-4 bg-primary hover:bg-primary-dark text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-primary/25">
+            Отправить
+          </button>
+        </form>
+      </div>
+
+      <!-- Info + Map -->
+      <div class="space-y-8">
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold">Адрес</h4>
+              <p class="text-sm text-text-light mt-1">г. Бишкек, Кыргызстан</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold">Email</h4>
+              <p class="text-sm text-text-light mt-1">info@bizkeremet.net</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold">Телефон</h4>
+              <p class="text-sm text-text-light mt-1">+996 (XXX) XX-XX-XX</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold">Режим работы</h4>
+              <p class="text-sm text-text-light mt-1">Пн-Пт: 9:00 - 18:00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="rounded-2xl overflow-hidden h-64 border border-gray-100">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93548.0307553776!2d74.52635870937499!3d42.87466585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7b15a9a2f21%3A0x89f8671ff58f98cd!2z0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1700000000000!5m2!1sru!2skg"
+            width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Бизкеремет на карте Бишкека">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
