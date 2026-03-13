@@ -72,9 +72,9 @@ function ElegantShape({
 }
 
 function HeroGeometric({
-    badge = "Design Collective",
-    title1 = "Elevate Your Digital Vision",
-    title2 = "Crafting Exceptional Websites",
+    badge = "Бизкеремет",
+    title1 = "Чистый бизнес",
+    title2 = "в цифре",
 }: {
     badge?: string;
     title1?: string;
@@ -187,8 +187,8 @@ function HeroGeometric({
                         animate="visible"
                     >
                         <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
-                            Crafting exceptional digital experiences through
-                            innovative design and cutting-edge technology.
+                            Создаём выдающиеся цифровые продукты с помощью
+                            инновационного дизайна и передовых технологий.
                         </p>
                     </motion.div>
                 </div>
